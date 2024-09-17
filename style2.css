@@ -1,0 +1,67 @@
+.contenedor{
+    background-color: aqua;
+    padding: 10px;
+    font-size: 25px;
+    display:grid;
+    grid-gap: 10px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "cabecera cabecera cabecera"
+                        "menu      menu     menu"
+                        "contenido contenido publicidad"
+                        "pie     pie     pie"
+    ;
+    grid-template-rows: 2fr 1fr 6fr 1fr;
+}
+.contenedor>div{
+    background-color: chartreuse;
+}
+.contenedor .cabecera{
+    background-color: yellow;
+    grid-column: cabecera;
+}
+.contenedor .menu{
+    background-color: coral;
+    grid-column: menu;
+}
+.contenedor .contenido{
+    background-color: blue;
+    grid-column: contenido;
+    padding: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+}
+.contenedor .contenido .texto1{
+    background-color: bisque;
+    grid-column: 1/2;
+    grid-row: 2/5;
+}
+.contenedor .contenido .texto2{
+    background-color: rgb(34, 228, 99);
+    grid-column: 2/3;
+    grid-row: 2/5;
+}
+.contenedor .publicidad{
+    background-color: brown;
+    grid-column: publicidad;
+    padding: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.contenedor .publicidad .pub1{
+    background-color: red;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.contenedor .publicidad .pub2{
+    background-color: blueviolet;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.contenedor .pie{
+    background-color: azure;
+    grid-column: pie;
+}
